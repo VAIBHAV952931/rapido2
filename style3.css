@@ -1,0 +1,298 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  background-color: #FFD400;
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 8px 25px;
+  border-radius: 50px;
+  display: inline-block;
+  font-style: italic;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #f5c400;
+}
+
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* HERO */
+.ads-hero {
+  display: flex;
+  padding: 80px 10%;
+  background: #fff3d6;
+  align-items: center;
+  gap: 50px;
+}
+
+.ads-left {
+  flex: 1;
+}
+
+.ads-left h1 {
+  font-size: 48px;
+  line-height: 1.1;
+}
+
+.ads-left p {
+  font-size: 18px;
+  margin: 25px 0;
+  color: #555;
+}
+
+.yellow-btn {
+  background: #f9c600;
+  border: none;
+  padding: 15px 35px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.yellow-btn:hover {
+  transform: scale(1.05);
+}
+
+.ads-right {
+  flex: 1;
+}
+
+.ads-right img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* WHY ADS */
+.why-ads {
+  text-align: center;
+  padding: 80px 10%;
+}
+
+.why-ads h2 {
+  font-size: 36px;
+}
+
+.sub-text {
+  max-width: 700px;
+  margin: 20px auto;
+  color: #666;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  background: #f4faff;
+  padding: 40px;
+  flex: 1;
+  min-width: 200px;
+  max-width: 250px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.stat-box h2 {
+  font-size: 32px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+/* TARGETING */
+.targeting {
+  text-align: center;
+  padding: 80px 10%;
+  background: #fafafa;
+}
+
+.targeting h2 {
+  font-size: 36px;
+}
+
+.cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: left;
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.yellow {
+  background: #fff1c1;
+}
+
+.blue {
+  background: #eaf4ff;
+}
+
+.orange {
+  background: #ffd9b3;
+}
+
+/* FOOTER */
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 80px 10% 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-col h3 {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+  color: #ccc;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.footer-col ul li a:hover {
+  color: #f5c400;
+}
+
+.app-btn {
+  width: 140px;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons img {
+  width: 35px;
+  height: 35px;
+  filter: invert(1);
+}
+
+.footer-bottom {
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 1px solid #333;
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 992px) {
+  .ads-hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .ads-left h1 {
+    font-size: 32px;
+  }
+
+  .why-ads h2,
+  .targeting h2 {
+    font-size: 28px;
+  }
+}
